@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>D&D</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../JavaScript/D&Dwebsite.js" defer></script>
+</head>
+<body>
+<div class="full">
+<div class="arrow">
+    <div class="arrowRight"><a href="Class.html"><i class="fas fa-arrow-right"></i></a></div>
+    <div class="arrowDown"><a href="NPC.html"><i class="fas fa-arrow-down"></i></a></div>
+    <div class="arrowLeft"><a href="Catirra.html"><i class="fas fa-arrow-left"></i></a></div>
+    <span class="inventory"><a href="Inventory.html"><i class="fab fa-critical-role"></i></a></span>
+    <div class="view"><a href="view.html" class="view">&times;</a></div>
+    <span class="treeIcon"><a href="Tree.html"><i class="fas fa-tree"></i></a></span>
+    <div class="title">
+        <div id="levelTitle" class="subTitle"></div>
+    </div>
+    <div class="Contain">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Village')">Village</button>
+            <button class="tablinks" onclick="openCity(event, 'Cores')">Cores</button>
+            <button class="tablinks" onclick="openCity(event, 'CS')">Chaos Shards</button>
+            <button class="tablinks" onclick="openCity(event, 'EA')">Elemental Alignment</button>
+            <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+            <button class="tablinks" onclick="openCity(event, 'CP')">Chaos Points</button>
+            <button class="tablinks" onclick="openCity(event, 'life')">Life Aura</button>
+        </div>
+
+            <div id="Village" class="tabcontent">
+                <div class="Title">Village</div>
+                <div class="info">None</div>
+            </div>
+
+            <div id="Cores" class="tabcontent">
+                <div class="Title">Cores</div>
+                <div class="header">How to start a village.</div>
+                <div class="info">None</div>
+            </div>
+
+            <div id="CS" class="tabcontent">
+                <div class="Title">Chaos Shards</div>
+                <div class="header">???</div>
+            </div>
+
+            <div id="EA" class="tabcontent">
+                <div class="Title">Elemental Alignment</div>
+                <div class="header">Light</div>
+            </div>
+
+            <div id="Skills" class="tabcontent">
+                <div class="Title">Skills</div>
+                <div class="header">SP-Skill Points</div>
+                <div id="skill" class="info">5 SP</div>
+                <div class="header">Duel -
+                    <div class="info">50 mana</div>
+                    <div class="info">Spiritual Aura,</div>
+                    <div class="info">fight another mindscape. (only have offense)</div>
+                    <div class="info">Tier: 1/3 (10 SP)</div>
+                </div>
+                <div class="header">N/A (5 SP) Resistance -
+                    <div class="info">resistance to being dragged into enemy mindscape.</div>
+                </div>
+                <div class="header">Mind Portal -
+                    <div class="info">25 mana</div>
+                    <div class="info">bring an offensive item from the real world to the mindscape</div>
+                </div>
+                <div class="header">Command - lvl 2
+                    <div class="info">0.2% to next level</div>
+                    <div class="info">Power of will to command</div>
+                </div>
+
+            </div>
+
+            <div id="CP" class="tabcontent">
+                <div class="Title">Chaos Points</div>
+                <div id="chaosPoints" class="header"></div>
+            </div>
+        <div class="tabcontent" id="life">
+            <div class="Title">Life Aura</div>
+            <div class="header">Borvax -
+                <div class="info">20 control P</div>
+                <div class="info">10 force P</div>
+                <div class="info">10 energy</div>
+                <div class="info">Resilience 5 pts.</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <span class="guilds"><a href="Guilds.html"><i class="fas fa-archway"></i></a></span>
+</div>
+</body>
+</html>

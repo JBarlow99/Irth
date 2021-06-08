@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../JavaScript/D&Dwebsite.js" defer></script>
+</head>
+<body>
+<div class="full">
+<div class="arrow">
+    <div class="arrowLeft"><a href="D&Dwebsite.html"><i class="fas fa-arrow-left"></i></a></div>
+    <div class="view"><a href="view.html" class="view">&times;</a></div>
+    <span class="treeIcon"><a href="Tree.html"><i class="fas fa-tree"></i></a></span>
+    <span class="inventory"><a href="Inventory.html"><i class="fab fa-critical-role"></i></a></span>
+    <div class="title">
+        <div class="subTitle">Class</div>
+    </div>
+<div class="Contain">
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Feats')">Feats</button>
+        <button class="tablinks" onclick="openCity(event, 'WP')">Weapon Proficiency</button>
+        <button class="tablinks" onclick="openCity(event, 'class')">Class</button>
+        <button class="tablinks" onclick="openCity(event, 'form')">Forms</button>
+        <button class="tablinks" onclick="openCity(event, 'spell')">Spells</button>
+        <button class="tablinks" onclick="openCity(event, 'plane')">Planeswalker</button>
+        <button class="tablinks" onclick="openCity(event, 'life')">Life Magic</button>
+    </div>
+
+    <div id="Feats" class="tabcontent">
+        <div class="Title">Feats</div>
+        <div class="header">Write/Read -
+            <div class="info">Level: 1/10</div>
+        </div>
+        <div class="header">Psionics -
+            <div class="info">Level: 1/10</div>
+        </div>
+        <div class="header">Spot Checks -
+            <div class="info">Level: 1/10</div>
+        </div>
+    </div>
+
+    <div id="WP" class="tabcontent">
+        <div class="Title">Weapon Proficiency</div>
+        <div class="header">22 (% chance to crit)</div>
+        <div class="info">10-19: d4,    20-29: d6,   30-39: d8,   40-49: d10,  50-59: d12,  60+ d20</div>
+        <div class="header">Sniper</div>
+        <div class="info">Cast: 50 Shot: 10</div>
+        <div class="info">Laser - mini shot for free</div>
+        <div class="info">0-100: 100%</div>
+        <div class="info">100-1000: 75%</div>
+        <div class="info">1000-2000: 50%</div>
+        <div class="info">2000-3000: 25%</div>
+        <div class="info">3000+: 0%</div>
+        <div class="header">Light Rifle -
+            <div class="info">Level 10</div>
+        </div>
+        <div class="header">Knife -
+            <div class="info">Level 9</div>
+        </div>
+        <div class="header">Short Sword -
+            <div class="info">Level 2</div>
+        </div>
+        <div class="header">Martial Arts -
+            <div class="info">Level 6</div>
+        </div>
+    </div>
+
+    <div id="class" class="tabcontent">
+        <div class="Title">Class</div>
+        <div class="Title">Rogue</div>
+        <div class="header">Stealth</div>
+        <div class="header">Sneak Attack</div>
+        <div class="info">Level: 2</div>
+        <div class="Title">Assassin</div>
+        <div class="info">Mark Target: know where they are (Dangersense-within 100")</div>
+        <div class="info">Assassinate</div>
+    </div>
+
+    <div id="form" class="tabcontent">
+        <div class="Title">Form</div>
+        <div class="header">Melee only</div>
+        <div class="info">1 d4 to switch</div>
+        <div class="header">Barrier-
+            <div class="info">Psychological Defense</div>
+        </div>
+        <div class="header">Shell-
+            <div class="info">Physical Defense</div>
+        </div>
+        <div class="header">Tiger-
+            <div class="info">Physical Offense, anti-Physical</div>
+        </div>
+        <div class="header">Dragon-
+            <div class="info">Magical Offense, anti-Magic</div>
+        </div>
+        <div class="header">Sigil-
+            <div class="info">Buff allies, Debuff enemies</div>
+        </div>
+    </div>
+
+    <div id="spell" class="tabcontent">
+        <div class="Title">Spells</div>
+        <div class="header">Cover -
+            <div class="info">Mana - 9 (30 - lvl)</div>
+            <div class="info">Redirect all attacks for intended target to self (fight duration)</div>
+        </div>
+        <div class="header">Minor Heal -
+            <div class="info">Mana - 5</div>
+            <div class="info">Recharge: d6</div>
+            <div class="info">10% (max health) (one cast per person per fight)</div>
+        </div>
+        <div class="header">Stabilize -
+            <div class="info">Mana - 25</div>
+            <div class="info">Just like DnD</div>
+        </div>
+        <div class="header">Light's Fire -
+            <div class="info">Mana - 10</div>
+            <div class="info">Illumination</div>
+            <div class="info">Enchant weapon - (fight duration)</div>
+        </div>
+        <div class="header">Critical -
+            <div class="info">5 mana</div>
+            <div class="info">30 mana beginning of turn</div>
+            <div class="info">Crit enemies for massive damage</div>
+            <div class="info">multiplies damage by d10.</div>
+        </div>
+    </div>
+    <div id="plane" class="tabcontent">
+        <div class="Title">Planeswalker</div>
+        <div class="info">Suntail Hawk -
+            <div class="info">1/1</div>
+            <div class="info">1 Mana</div>
+            <div class="info">Flying</div>
+        </div>
+        <div class="info">Youthful Knight -
+            <div class="info">2/1</div>
+            <div class="info">2 Mana</div>
+            <div class="info">First Strike</div>
+        </div>
+        <div class="info">Vernerable Monk -
+            <div class="info">2/2</div>
+            <div class="info">4 Mana</div>
+            <div class="info">Gain 10% health upon cast</div>
+        </div>
+        <div class="info">Warrior Angel -
+            <div class="info">3/4</div>
+            <div class="info">5 Mana</div>
+            <div class="info">Heal for 50% of damage dealt</div>
+        </div>
+    </div>
+    <div id="life" class="tabcontent">
+        <div class="Title">Life Magic -
+            <div class="info">level 2</div>
+        </div>
+        <div class="header">Life Beacon -
+            <div class="info">38 mana, golden flair fires into air, ally creatures in 1 mile come to aid</div>
+            <div class="info">Duration: 6 hours, 4 sec cast time</div>
+        </div>
+        <div class="header">Weak Life Aura -
+            <div class="info">50 mana, casters body is surrounded by light, Duration: 20 minutes, 2 sec cast time, Range 5"</div>
+        </div>
+        <div class="header">Virol's Blessing -
+            <div class="info">84 mana, Once a Day, permanently increased crop growth by 5%, max 100%</div>
+        </div>
+        <div class="header">Weak Mend Bone -
+            <div class="info">59 mana, targeted, Range: touch</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
